@@ -13,3 +13,5 @@ girl-atlas-crawler
 
 * get_image.py 每次发送一个请求
 * get_image_gevent.py 每次发送五个请求
+
+**注：可以在get_images函数中修改图片存放目录**
