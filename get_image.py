@@ -90,7 +90,7 @@ def get_images(girl_list):
 
         for url in urls:
             print url
-            with open(dir_name + '/' + url.split('/')[-1], 'w') as f:
+            with open(dir_name + '/' + url.split('/')[-1], 'wb') as f:
                 r = get_response(url)
                 f.write(r.content)
 

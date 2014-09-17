@@ -94,7 +94,7 @@ def get_images(girl_list):
         image_dict = dict(zip(urls, responses))
         for url in image_dict:
             print url
-            with open(dir_name + '/' + url.split('/')[-1], 'w') as f:
+            with open(dir_name + '/' + url.split('/')[-1], 'wb') as f:
                 r = image_dict[url]
                 f.write(r.content)
 
